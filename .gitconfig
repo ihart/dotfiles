@@ -1,0 +1,46 @@
+[core]
+	quotepath = false
+[user]
+	name = Ian Hart
+	email = ian@ianmadethis.com
+[alias]
+    co = checkout
+    com = checkout master
+    copa = checkout feature/pano
+    copr = checkout feature/projective
+    c = commit -am
+    pl = pull
+    p = push
+    s = status -s
+    st = status
+    df = diff --color --color-words --abbrev
+    log = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    br = branch -av
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    pod = push origin develop
+    pom = push origin master
+    ppa = push origin feature/pano
+    ppr = push origin feature/projective
+    plod = pull origin develop
+    plom = pull origin master
+    plpa = pull origin feature/pano
+    plpr = pull origin feature/projective
+    m = merge --no-ff
+    mpr = merge --no-ff feature/projective
+[color]
+    ui = always
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[http]
+	sslVerify = false
