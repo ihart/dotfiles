@@ -44,3 +44,5 @@
     untracked = cyan
 [http]
 	sslVerify = false
+[push]
+	default = current
